@@ -30,3 +30,14 @@ p {
     padding: 10px;
     text-align: center;
 }
+
+button {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: #7d6c66;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
