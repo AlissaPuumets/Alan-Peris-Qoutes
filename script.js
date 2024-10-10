@@ -1,15 +1,17 @@
-const url = "https://www.affirmations.dev/";
+const url = "https://perl.is/random";
 
-async function fetchMessage() {
-    try {
-        const response = await fetch(url); // Fetch one affirmation
+async function fetchMessages() {
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            this.location.reload();
+        }
+    });
+    {
+        const response = await fetch(url);
         const data = await response.json();
-        const element = document.getElementById("affirmation-text"); // Get p tag
-        element.textContent = data.affirmation; // Update with new affirmation
-    } catch (error) {
-        console.error("Error fetching affirmation:", error); // Handle fetch errors
+        const element = document.querySelector(".quote");
+        element.innerHTML += "<p>" + data.quote + "</p>";
     }
 }
 
-// Add event listener to button
-document.getElementById("new-affirmation-btn").addEventListener("click", fetchMessage);
+fetchMessages()
