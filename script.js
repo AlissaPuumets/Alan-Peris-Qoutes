@@ -3,7 +3,7 @@ const url = "https://www.affirmations.dev/"
 async function fetchMessages() {
     document.addEventListener('keydown',function (event) {
         if (event.key === 'Enter') {
-            this.location.reload();
+            location.reload();
         }
     });
     for (let i = 0; i < 20; i++) {
