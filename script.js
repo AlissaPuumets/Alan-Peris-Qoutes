@@ -1,4 +1,4 @@
-const url = "https://perl.is/random";
+const url = "https://techy-api.vercel.app/api/json";
 
 async function fetchMessages() {
     document.addEventListener('keydown', function (event) {
