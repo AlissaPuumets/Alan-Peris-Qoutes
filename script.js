@@ -1,4 +1,4 @@
-const url = "https://techy-api.vercel.app/api/json";
+const url = "";
 
 async function fetchMessages() {
     document.addEventListener('keydown', function (event) {
