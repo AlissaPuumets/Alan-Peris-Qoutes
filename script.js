@@ -1,4 +1,4 @@
-const url = "";
+const url = "https://perl.is/random";
 
 async function fetchMessages() {
     document.addEventListener('keydown', function (event) {
@@ -6,7 +6,7 @@ async function fetchMessages() {
             this.location.reload();
         }
     });
-    {
+    for (let i=0; i < 20; i++) {
         const response = await fetch(url);
         const data = await response.json();
         const element = document.querySelector(".quote");
@@ -15,3 +15,7 @@ async function fetchMessages() {
 }
 
 fetchMessages()
+
+function reloadpage(){
+    location.reload()
+}

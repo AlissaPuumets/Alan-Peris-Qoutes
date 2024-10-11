@@ -1,31 +1,33 @@
 body {
-    background-color: #e3d6cf;
+    background-color: #F2D6CE;
     text-align: center;
     
 }
 
 h1 {
-    color: #7d6c66;
+    color: #ba8175;
     font-size: 140px;
     margin-top: 30px;
 }
 
 p {
     color: black;
-    background-color: #FEFCF6;
-    font-size: 60px;
+    background-color: #f4f0ec;
+    font-size: 45px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 button {
     font-size: 25px;
     padding: 10px 20px;
-    margin-top: 50px;
     cursor: pointer;
-    background-color: #7d6c66;
+    background-color: #CA8E82;
     color: white;
     border-radius: 10px;
     border: none;
+    align-self: flex-end;
 }
